@@ -9,7 +9,18 @@ class EventsController < ApplicationController
   end
 
   def create
+    @event = Event.new(event_params)
+    if @event.save
+      redirect_to root_path
+    else
+      raise "oh no"
+    end
   end
 
+private
+
+  def event_params
+    params.require(:event).permit(:title, :description, :contact, :address, :facebook_url, :other_url, :location, :date, :avatar)
+  end
 
 end
