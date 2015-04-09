@@ -14,18 +14,22 @@ section.sidebar {
   padding: 10px;
 }
 
-section.menu {
+section.poster {
   @include span(4.5 of 8);
   margin-left: span(2.5 of 8);
   position: fixed;
+  height: 100%;
+  background-image: image-url('poster.jpg');
+  opacity: .5;
+  overflow: hidden;
 }
 
-section.menu > img {
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
+section.poster {
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
 }
 
 
