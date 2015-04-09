@@ -25,6 +25,7 @@ $susy: (
 
 html, body {
   font-family: 'Nixie One', cursive;
+  background: black;
 }
 
 img {
@@ -84,13 +85,34 @@ main {
 }
 
 
-.logo1 {
-  text-align: center;
-  letter-spacing: 1em;
-  margin-right: 70px;
+.logo-title {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-right: 22%;
+  padding-left: 22%;
+  background: white;
+  color: black;
+  .logo {
+    letter-spacing: 1em;
+  }
+
 }
 
-.logo2 {
-  letter-spacing: 1em;
+.add-event {
   text-align: center;
+  margin: 30px;
+}
+.add-event > a.btn {
+  border: none;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-right: 22%;
+  padding-left: 22%;
+  font-family: 'Nixie One', cursive;
+  background: linear-gradient(60deg, #ef7e7e 0%, #80f2a8 100%);
+}
+
+.add-event > a.btn {
+  text-decoration: none;
+  color: white;
 }

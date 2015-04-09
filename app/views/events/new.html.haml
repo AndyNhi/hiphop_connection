@@ -1,0 +1,39 @@
+
+%section.event-form
+  = form_for @event do |f|
+
+    .form-group
+      =f.label :title, class: 'label'
+      =f.text_field :title, class: 'field'
+
+    .form-group
+      =f.label :date, class: 'label'
+      =f.text_field :date, class: 'field'
+
+    .form-group
+      =f.label :location, class: 'label'
+      =f.text_field :location, class: 'field'
+
+    .form-group
+      =f.label :address, class: 'label'
+      =f.text_field :address, class: 'field'
+
+    .form-group
+      =f.label :description, class: 'label'
+      =f.text_field :description, class: 'field'
+
+    .form-group
+      =f.label :avatar, "Image", class: 'label'
+      =f.file_field :avatar, class: 'field'
+      =f.hidden_field :avatar_cache, class: 'field'
+
+    .form-group
+      =f.label :facebook_url, class: 'label'
+      =f.text_field :facebook_url, class: 'field'
+
+    .form-group
+      =f.label :other_url, class: 'label'
+      =f.text_field :other_url, class: 'field'
+
+    .form-group
+      =f.submit

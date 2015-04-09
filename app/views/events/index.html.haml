@@ -1,6 +1,17 @@
 %aside
-  .logo1 hip hop
-  .logo2 connection
+  .logo-title
+    .logo hip hop connection
+  .add-event
+    =link_to "add event", new_event_path, class: 'btn'
+  .story
+    Hello hip hop community, I've designed a site where you can post dance related hip hop events. Bare with the
+    URL, I'm hosting the site free and I can't afford a legit domain at the moment. Type of events you should
+    list:
+    %p + practice sessions
+    %p + workshops
+    %p + jams and shows
+    %p + street performances
+    %p + community service 
 %main
   - @events.each do |event|
     .thumb

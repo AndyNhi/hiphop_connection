@@ -1,0 +1,31 @@
+$susy: (
+ gutters: 0,
+);
+
+@import 'susy';
+
+section.event-form {
+  @include container(60em);
+  color: white;
+}
+
+.form-group {
+  @include span(2 of 2);
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.label {
+  @include span(.4 of 2);
+  text-align: right;
+  padding-right: 10px;
+}
+
+.field {
+  @include span(1 of 2);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+}
