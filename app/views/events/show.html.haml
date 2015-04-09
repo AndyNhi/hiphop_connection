@@ -1,0 +1,11 @@
+%section.sidebar
+  %h1.g-color= @event.title
+  %h3.g-color= @event.date.strftime("%B + %d | %Y")
+  %p.text-block= @event.description
+  %h5= "location : : #{@event.location}"
+  %h5= "address : : #{@event.address}"
+  %h5= "facebook link : : #{@event.facebook_url}"
+  %h5= "additional link : : #{@event.other_url}"
+
+%section.menu
+  =image_tag @event.avatar.url

@@ -1,0 +1,41 @@
+$susy: (
+ gutters: 0,
+);
+
+@import 'susy';
+
+
+section.sidebar {
+  @include span(2.5 of 8);
+  background: rgba(104, 104, 104, 0.73);
+  height: 100%;
+  position: fixed;
+  color: white;
+  padding: 10px;
+}
+
+section.menu {
+  @include span(4.5 of 8);
+  margin-left: span(2.5 of 8);
+  position: fixed;
+}
+
+section.menu > img {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+}
+
+
+p.text-block {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+}
+
+.g-color {
+  color: #80f2a8;
+}

@@ -4,8 +4,7 @@ $susy: (
 
 @import 'susy';
 
-section.event-form {
-  @include container(60em);
+.event-form {
   color: white;
 }
 
