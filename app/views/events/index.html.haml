@@ -2,5 +2,8 @@
   %h1 aside
 %main
   - @events.each do |event|
-  .thumb
-    =event
+    .thumb
+      = image_tag event.avatar.url
+      %h1.title= event.title
+      .date-month=event.date.strftime("%^b")
+      .date-day=event.date.strftime("%d ")
