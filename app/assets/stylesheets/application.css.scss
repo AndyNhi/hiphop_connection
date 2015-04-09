@@ -58,6 +58,8 @@ main {
     @include span(1 of 4);
     height: 20rem;
     position: relative;
+    border: 2px solid white;
+    overflow: hidden;
     h1.title {
       position: absolute;
       top: 84%;
@@ -67,16 +69,17 @@ main {
     }
     .date-month {
       position: absolute;
-      top: 2%;
-      left: 85%;
+      top: 4%;
+      left: 80%;
       width: 14%;
       background: #ef7e7e;
       padding-left: 8px;
+      overflow: none;
     }
     .date-day {
       position: absolute;
-      top: 9%;
-      left: 85%;
+      top: 12%;
+      left: 80%;
       width: 14%;
       background: #80f2a8;
       font-size: 2em;
