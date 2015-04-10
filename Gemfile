@@ -11,6 +11,7 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'carrierwave', '~> 0.10.0'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'susy'
+gem 'rails_12factor', '~> 0.0.3'
 
 group :development, :test do
   gem 'byebug'
