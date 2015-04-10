@@ -1,6 +1,6 @@
 - @events.each do |event|
   .thumb
     =link_to image_tag(event.avatar.url), event_path(event)
-    %h1.title= event.title
+    %h4.title= event.title
     .date-month=event.date.strftime("%^b")
     .date-day=event.date.strftime("%d ")
