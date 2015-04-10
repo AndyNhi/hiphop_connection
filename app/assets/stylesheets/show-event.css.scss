@@ -32,6 +32,14 @@ section.poster {
   -ms-filter: blur(25px);
 }
 
+.thumbnail > img {
+  border: 2px solid white;
+  float: right;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+}
+
 
 p.text-block {
   background: white;
@@ -42,4 +50,28 @@ p.text-block {
 
 .g-color {
   color: #80f2a8;
+}
+
+
+.edit-link {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5%;
+  margin-right: 2%;
+}
+
+.edit-field  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 85%;
+  font-size: 1.5em;
+  background: none;
+  margin-bottom: 1%;
+  outline: 0;
+  border: none;
 }
