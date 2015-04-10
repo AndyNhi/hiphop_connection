@@ -13,7 +13,8 @@ class EventsController < ApplicationController
     if @event.save
       redirect_to root_path
     else
-      raise "oh no"
+      @error_messages = @event.errors.full_messages
+      render :new
     end
   end
 
@@ -39,7 +40,7 @@ class EventsController < ApplicationController
 private
 
   def event_params
-    params.require(:event).permit(:title, :description, :contact, :address, :facebook_url, :other_url, :location, :date, :avatar)
+    params.require(:event).permit(:title, :description, :contact, :address, :facebook_url, :other_url, :location, :date, :avatar, :email, :avatar_cache)
   end
 
 end

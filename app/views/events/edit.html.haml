@@ -4,6 +4,10 @@
   = form_for @event do |f|
 
     .form-group
+      =f.label :email, class: 'label'
+      =f.text_field :email, class: 'field'
+
+    .form-group
       =f.label :title, class: 'label'
       =f.text_field :title, class: 'field'
 

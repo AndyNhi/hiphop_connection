@@ -43,8 +43,9 @@ $susy: (
   outline: none;
 }
 
-.text-box {
-  
+.errors {
+  @include container(51em);
+  color: #f97c7c;
 }
 
 .form-button {
