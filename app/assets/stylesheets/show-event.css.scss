@@ -4,8 +4,6 @@ $susy: (
 
 @import 'susy';
 
-
-
 section.sidebar {
   overflow: hidden;
   @include span(2.5 of 8);
@@ -53,7 +51,6 @@ p.text-block {
 .g-color {
   color: #80f2a8;
 }
-
 
 .edit-link {
   height: 50px;
