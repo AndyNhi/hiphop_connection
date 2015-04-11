@@ -5,7 +5,9 @@ $susy: (
 @import 'susy';
 
 
+
 section.sidebar {
+  overflow: hidden;
   @include span(2.5 of 8);
   background: rgba(104, 104, 104, 0.73);
   height: 100%;
