@@ -9,9 +9,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails', '~> 0.9.0'
 gem 'carrierwave', '~> 0.10.0'
+gem 'fog'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'susy'
 gem 'rails_12factor', '~> 0.0.3'
+gem 'dotenv', '~> 2.0.1'
+gem 'dotenv-rails', '~> 2.0.1'
 
 group :development, :test do
   gem 'byebug'
