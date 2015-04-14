@@ -46,6 +46,9 @@ aside {
   background: #2b2b2b;
   color: white;
   overflow: hidden;
+  @media (max-width: 1280px) {
+    display: none;
+  }
 }
 
 .story {
@@ -57,11 +60,23 @@ main {
   @include span(6 of 8);
   margin-left: span(2 of 8);
   background: black;
+  @media (max-width: 1280px) {
+    @include span(8 of 8);
+  }
   .thumb {
     @include span(1 of 4);
     height: 20rem;
     position: relative;
     overflow: hidden;
+    @media (max-width: 680px) {
+      @include span(1 of 3);
+    }
+    @media (max-width: 540px) {
+      @include span(1 of 2);
+    }
+    @media (max-width: 400px) {
+      @include span(1 of 1);
+    }
     h4.title {
       position: absolute;
       top: 80%;
@@ -138,4 +153,16 @@ main {
   border-right: 1px solid #ef7e7e;
   border-bottom: 1px solid #ef7e7e;
   padding: 5px;
+}
+
+
+a.delete-button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid red;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: right;
 }

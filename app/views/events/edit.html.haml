@@ -1,5 +1,7 @@
 .edit-page
+  =link_to 'Delete Event', event_path(@event), class: "delete-button", method: :delete, data: { confirm: "Are you sure?" }
   %h1 EDIT EVENT
+
 .event-form
   = form_for @event do |f|
 

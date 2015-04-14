@@ -19,6 +19,7 @@ gem 'dotenv-rails', '~> 2.0.1'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.2.1'
+  gem 'capybara', '~> 2.4.4'
   gem 'pry-rails', '~> 0.3.4'
   gem 'web-console', '~> 2.0'
   gem 'spring'
