@@ -12,6 +12,9 @@ section.sidebar {
   position: fixed;
   color: white;
   padding: 10px;
+  @media (max-width: 460px) {
+    @include span(1 of 1);
+  }
 }
 
 section.poster {
@@ -22,6 +25,9 @@ section.poster {
   background-image: image-url('poster.jpg');
   opacity: .5;
   overflow: hidden;
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 
 section.poster {
