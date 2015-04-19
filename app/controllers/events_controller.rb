@@ -1,11 +1,19 @@
 class EventsController < ApplicationController
 
+  before_action :event_id, only: [:show, :edit, :update, :destroy]
+
   def index
     @events = Event.all
   end
 
   def new
     @event = Event.new
+  end
+
+  def show
+  end
+
+  def edit
   end
 
   def create
@@ -18,16 +26,7 @@ class EventsController < ApplicationController
     end
   end
 
-  def show
-    @event = Event.find(params[:id])
-  end
-
-  def edit
-    @event = Event.find(params[:id])
-  end
-
   def update
-    @event = Event.find(params[:id])
     if @event.update(event_params)
       redirect_to event_path(@event)
     else
@@ -36,18 +35,33 @@ class EventsController < ApplicationController
   end
 
   def destroy
-    @event = Event.find(params[:id])
     if @event.destroy
       redirect_to root_path
     else
-      raise "oh no"
+      @error_messages = @event.errors.full_messages
+      render :edit
     end
   end
 
 private
 
+  def event_id
+    @event = Event.find(params[:id])
+  end
+
   def event_params
-    params.require(:event).permit(:title, :description, :contact, :address, :facebook_url, :other_url, :location, :date, :avatar, :email, :avatar_cache)
+    params.require(:event).permit(
+      :title,
+      :description,
+      :contact,
+      :address,
+      :facebook_url,
+      :other_url,
+      :location,
+      :date,
+      :avatar,
+      :email,
+      :avatar_cache)
   end
 
 end
