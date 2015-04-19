@@ -7,16 +7,16 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
-    %aside
-      .house
+    %nav
+      .home
         =link_to (image_tag "housey.svg"), root_path
-      .add-event
-        =button_to "add event", new_event_path, class: 'btn', method: :get
-
-      .story
-        Hello hip hop community, I've designed a site where you can post dance related hip hop events. Bare with the
-        URL, I'm hosting the site free and I can't afford a legit domain at the moment. Type of events you should
-        list:
+      .event
+        =button_to "add event", new_event_path, class: 'button', method: :get
+      .purpose
+        Hello hip hop community, I've designed a site where you can post dance
+        related hip hop events. Bare with the URL, I'm hosting the site free
+        and I can't afford a legit domain at the moment. Type of events you
+        should list:
         %p + practice sessions
         %p + workshops
         %p + jams and shows

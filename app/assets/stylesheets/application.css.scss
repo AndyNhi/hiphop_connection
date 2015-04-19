@@ -23,7 +23,7 @@ $susy: (
 
 *,:after,:before{box-sizing:border-box}
 
-html, body {
+html, body, button {
   font-family: 'Nixie One', cursive;
   background: black;
 }
@@ -35,11 +35,16 @@ img {
   opacity: .3;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   @include span(8 of 8);
 }
 
-aside {
+nav {
   @include span(2 of 8);
   position: fixed;
   height: 100%;
@@ -49,10 +54,6 @@ aside {
   @media (max-width: 1200px) {
     display: none;
   }
-}
-
-.story {
-  padding: 20px;
 }
 
 main {
@@ -93,7 +94,6 @@ main {
     .date-month {
       position: absolute;
       top: 4%;
-
       width: 14%;
       background: #ef7e7e;
       padding-left: 8px;
@@ -102,10 +102,8 @@ main {
     .date-day {
       position: absolute;
       top: 12%;
-
       width: 14%;
       background: #80f2a8;
-
       padding-left: 8px;
     }
     & > a> img:hover{
@@ -115,60 +113,29 @@ main {
 }
 
 
-.logo-title {
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-right: 30%;
-  padding-left: 30%;
-  background: white;
-  color: black;
-  .logo {
-    letter-spacing: 1em;
-  }
-
+.home {
+  padding: 5px;
 }
 
-.add-event {
+.event {
   text-align: center;
   margin: 30px;
 }
 
-.btn {
+.event > form > input.button {
+  font-family: 'Nixie One', cursive;
+  background: transparent;
   color: white;
   padding-top: 4%;
   padding-bottom: 4%;
   padding-right: 22%;
   padding-left: 22%;
-  font-family: 'Nixie One', cursive;
-  background: transparent;
   border-left: 2px solid #80f2a8;
   border-top: 2px solid #80f2a8;
   border-right: 2px solid #ef7e7e;
   border-bottom: 2px solid #ef7e7e;
 }
 
-.house {
-  padding: 5px;
-}
-
-.back-button > a {
-  text-decoration: none;
-  color: #ef7e7e;
-  font-size: 2em;
-  border-top: 1px solid #ef7e7e;
-  border-right: 1px solid #ef7e7e;
-  border-bottom: 1px solid #ef7e7e;
-  padding: 5px;
-}
-
-
-a.delete-button {
-  text-decoration: none;
-  color: white;
-  border: 2px solid red;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  float: right;
+.purpose {
+  padding: 20px;
 }

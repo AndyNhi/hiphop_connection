@@ -4,20 +4,13 @@ $susy: (
 
 @import 'susy';
 
-.new-page {
+.event-header {
   padding-left: 20px;
-  h1{
-    color: white;
-  }
 }
 
-.edit-page {
-  padding-left: 20px;
-  h1{
-    color: white;
-  }
+.event-header > h1 {
+  color: white;
 }
-
 
 .event-form {
   color: white;
@@ -57,4 +50,98 @@ $susy: (
   border: 2px solid white;
   background: none;
   color: white;
+}
+
+section.sidebar {
+  overflow: hidden;
+  @include span(2.5 of 8);
+  background: rgba(104, 104, 104, 0.73);
+  height: 100%;
+  position: fixed;
+  color: white;
+  padding: 10px;
+  @media (max-width: 460px) {
+    @include span(1 of 1);
+  }
+}
+
+section.poster {
+  @include span(4.5 of 8);
+  margin-left: span(2.5 of 8);
+  position: fixed;
+  height: 100%;
+  background-image: image-url('poster.jpg');
+  opacity: .5;
+  overflow: hidden;
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+section.poster {
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+}
+
+.thumbnail > img {
+  border: 2px solid white;
+  float: right;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+}
+
+p.text-block {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+}
+
+.g-color {
+  color: #80f2a8;
+}
+
+.edit-link {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5%;
+  margin-right: 2%;
+}
+
+.edit-field  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 85%;
+  font-size: 1.5em;
+  background: none;
+  margin-bottom: 1%;
+  outline: 0;
+  border: none;
+}
+
+.back-button > a {
+  color: #ef7e7e;
+  font-size: 2em;
+  border-top: 1px solid #ef7e7e;
+  border-right: 1px solid #ef7e7e;
+  border-bottom: 1px solid #ef7e7e;
+  padding: 5px;
+}
+
+.delete-button {
+  border: 2px solid red;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: right;
 }
